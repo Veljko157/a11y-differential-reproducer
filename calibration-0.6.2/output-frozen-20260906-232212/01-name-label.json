@@ -1,0 +1,1375 @@
+{
+  "id": "EXP1",
+  "family": "name/label",
+  "act": "97a4e1",
+  "hypothesis": "A remote accessible-name dependency is part of the declared reproduction state.",
+  "predeclaredExpectedPattern": {
+    "hypothesis": "A remote accessible-name dependency is part of the declared reproduction state.",
+    "baselineSignature": "PASS|PASS",
+    "safeSignature": "PASS|PASS",
+    "invalidSignature": "FAIL|FAIL"
+  },
+  "observed": {
+    "baselineSignature": "PASS|PASS",
+    "safeSignature": "PASS|PASS",
+    "invalidSignature": "FAIL|FAIL",
+    "baselineStable": true,
+    "safeStable": true,
+    "invalidStable": true,
+    "safeEngineObservationPreserved": true,
+    "safeProfilePreserved": true,
+    "invalidProfilePreserved": false
+  },
+  "expectedPatternObserved": true,
+  "profile": {
+    "id": "name-label-v0.1",
+    "family": "name/label",
+    "mustPreserve": [
+      "unique target marker",
+      "semantic button role",
+      "accessible name value",
+      "aria-labelledby token list",
+      "all declared aria-labelledby targets remain resolvable"
+    ]
+  },
+  "profileChecks": {
+    "safe": {
+      "pass": true,
+      "checks": [
+        {
+          "id": "TARGET_UNIQUE",
+          "pass": true,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "AX_ROLE",
+          "pass": true,
+          "expected": "button",
+          "actual": "button"
+        },
+        {
+          "id": "ACCESSIBLE_NAME",
+          "pass": true,
+          "expected": "Save",
+          "actual": "Save"
+        },
+        {
+          "id": "LABELLEDBY_TOKENS",
+          "pass": true,
+          "expected": [
+            "remote-label"
+          ],
+          "actual": [
+            "remote-label"
+          ]
+        },
+        {
+          "id": "LABELLEDBY_RESOLVES",
+          "pass": true,
+          "expected": true,
+          "actual": [
+            {
+              "id": "remote-label",
+              "exists": true,
+              "text": "Save"
+            }
+          ]
+        }
+      ]
+    },
+    "invalid": {
+      "pass": false,
+      "checks": [
+        {
+          "id": "TARGET_UNIQUE",
+          "pass": true,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "AX_ROLE",
+          "pass": true,
+          "expected": "button",
+          "actual": "button"
+        },
+        {
+          "id": "ACCESSIBLE_NAME",
+          "pass": false,
+          "expected": "Save",
+          "actual": ""
+        },
+        {
+          "id": "LABELLEDBY_TOKENS",
+          "pass": true,
+          "expected": [
+            "remote-label"
+          ],
+          "actual": [
+            "remote-label"
+          ]
+        },
+        {
+          "id": "LABELLEDBY_RESOLVES",
+          "pass": false,
+          "expected": true,
+          "actual": [
+            {
+              "id": "remote-label",
+              "exists": false,
+              "text": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "baseline": {
+    "stable": true,
+    "runs": 3,
+    "representative": {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "button-name",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "button"
+          ]
+        ],
+        "bucket": "passes",
+        "outcome": "PASS",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 12,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+        "execution": "EXECUTED",
+        "outcome": "PASS",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 0,
+          "passed": 1,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 0,
+          "passed": 1,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "button",
+        "id": null,
+        "explicitRole": null,
+        "text": "",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "inline-block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "remote-label",
+          "tokens": [
+            "remote-label"
+          ],
+          "resolved": [
+            {
+              "id": "remote-label",
+              "exists": true,
+              "text": "Save"
+            }
+          ]
+        },
+        "table": {
+          "exists": false
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "button",
+          "name": "Save",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "PASS|PASS",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    "observations": [
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "remote-label",
+            "tokens": [
+              "remote-label"
+            ],
+            "resolved": [
+              {
+                "id": "remote-label",
+                "exists": true,
+                "text": "Save"
+              }
+            ]
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "Save",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "remote-label",
+            "tokens": [
+              "remote-label"
+            ],
+            "resolved": [
+              {
+                "id": "remote-label",
+                "exists": true,
+                "text": "Save"
+              }
+            ]
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "Save",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "remote-label",
+            "tokens": [
+              "remote-label"
+            ],
+            "resolved": [
+              {
+                "id": "remote-label",
+                "exists": true,
+                "text": "Save"
+              }
+            ]
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "Save",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      }
+    ],
+    "signatures": [
+      "PASS|PASS",
+      "PASS|PASS",
+      "PASS|PASS"
+    ],
+    "engineObservationKeys": [
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    ]
+  },
+  "safe": {
+    "stable": true,
+    "runs": 3,
+    "representative": {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "button-name",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "button"
+          ]
+        ],
+        "bucket": "passes",
+        "outcome": "PASS",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 12,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+        "execution": "EXECUTED",
+        "outcome": "PASS",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 0,
+          "passed": 1,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 0,
+          "passed": 1,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "button",
+        "id": null,
+        "explicitRole": null,
+        "text": "",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "inline-block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "remote-label",
+          "tokens": [
+            "remote-label"
+          ],
+          "resolved": [
+            {
+              "id": "remote-label",
+              "exists": true,
+              "text": "Save"
+            }
+          ]
+        },
+        "table": {
+          "exists": false
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "button",
+          "name": "Save",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "PASS|PASS",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    "observations": [
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "remote-label",
+            "tokens": [
+              "remote-label"
+            ],
+            "resolved": [
+              {
+                "id": "remote-label",
+                "exists": true,
+                "text": "Save"
+              }
+            ]
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "Save",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "remote-label",
+            "tokens": [
+              "remote-label"
+            ],
+            "resolved": [
+              {
+                "id": "remote-label",
+                "exists": true,
+                "text": "Save"
+              }
+            ]
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "Save",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "remote-label",
+            "tokens": [
+              "remote-label"
+            ],
+            "resolved": [
+              {
+                "id": "remote-label",
+                "exists": true,
+                "text": "Save"
+              }
+            ]
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "Save",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      }
+    ],
+    "signatures": [
+      "PASS|PASS",
+      "PASS|PASS",
+      "PASS|PASS"
+    ],
+    "engineObservationKeys": [
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    ]
+  },
+  "invalid": {
+    "stable": true,
+    "runs": 3,
+    "representative": {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "button-name",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "button"
+          ]
+        ],
+        "bucket": "violations",
+        "outcome": "FAIL",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 12,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+        "execution": "EXECUTED",
+        "outcome": "FAIL",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "button",
+        "id": null,
+        "explicitRole": null,
+        "text": "",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "inline-block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "remote-label",
+          "tokens": [
+            "remote-label"
+          ],
+          "resolved": [
+            {
+              "id": "remote-label",
+              "exists": false,
+              "text": null
+            }
+          ]
+        },
+        "table": {
+          "exists": false
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "button",
+          "name": "",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "FAIL|FAIL",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    "observations": [
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "violations",
+          "outcome": "FAIL",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "remote-label",
+            "tokens": [
+              "remote-label"
+            ],
+            "resolved": [
+              {
+                "id": "remote-label",
+                "exists": false,
+                "text": null
+              }
+            ]
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "FAIL|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "violations",
+          "outcome": "FAIL",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "remote-label",
+            "tokens": [
+              "remote-label"
+            ],
+            "resolved": [
+              {
+                "id": "remote-label",
+                "exists": false,
+                "text": null
+              }
+            ]
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "FAIL|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "violations",
+          "outcome": "FAIL",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "remote-label",
+            "tokens": [
+              "remote-label"
+            ],
+            "resolved": [
+              {
+                "id": "remote-label",
+                "exists": false,
+                "text": null
+              }
+            ]
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "FAIL|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      }
+    ],
+    "signatures": [
+      "FAIL|FAIL",
+      "FAIL|FAIL",
+      "FAIL|FAIL"
+    ],
+    "engineObservationKeys": [
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    ]
+  }
+}

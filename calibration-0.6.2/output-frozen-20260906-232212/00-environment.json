@@ -1,0 +1,25 @@
+{
+  "generatedAt": "2026-09-06T21:17:42.388Z",
+  "node": "v24.12.0",
+  "platform": "win32",
+  "arch": "x64",
+  "chromium": "151.0.7922.34",
+  "packages": {
+    "@axe-core/playwright": "4.13.0",
+    "@siteimprove/alfa-playwright": "0.84.2",
+    "@siteimprove/alfa-test-utils": "0.84.2",
+    "@siteimprove/alfa-rules": "0.119.0",
+    "@siteimprove/alfa-web": "0.119.0",
+    "playwright": "1.62.1"
+  },
+  "viewport": {
+    "width": 1280,
+    "height": 720
+  },
+  "locale": "en-US",
+  "colorScheme": "light",
+  "reducedMotion": "no-preference",
+  "forcedColors": "none",
+  "timezoneId": "UTC",
+  "javaScriptEnabled": true
+}

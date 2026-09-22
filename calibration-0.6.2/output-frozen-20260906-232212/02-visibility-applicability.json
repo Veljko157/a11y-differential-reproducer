@@ -1,0 +1,1314 @@
+{
+  "id": "EXP2",
+  "family": "visibility/applicability",
+  "act": "97a4e1",
+  "hypothesis": "Applicability/exposure state must not be collapsed into an ordinary PASS/FAIL observation.",
+  "predeclaredExpectedPattern": {
+    "hypothesis": "Applicability/exposure state must not be collapsed into an ordinary PASS/FAIL observation.",
+    "baselineSignature": "INAPPLICABLE|INAPPLICABLE",
+    "safeSignature": "INAPPLICABLE|INAPPLICABLE",
+    "invalidSignature": "FAIL|FAIL"
+  },
+  "observed": {
+    "baselineSignature": "INAPPLICABLE|INAPPLICABLE",
+    "safeSignature": "INAPPLICABLE|INAPPLICABLE",
+    "invalidSignature": "FAIL|FAIL",
+    "baselineStable": true,
+    "safeStable": true,
+    "invalidStable": true,
+    "safeEngineObservationPreserved": true,
+    "safeProfilePreserved": true,
+    "invalidProfilePreserved": false
+  },
+  "expectedPatternObserved": true,
+  "profile": {
+    "id": "visibility-applicability-v0.1",
+    "family": "visibility/applicability",
+    "mustPreserve": [
+      "unique target marker",
+      "aria-hidden/hidden/inert ancestor state",
+      "AX ignored/exposed state",
+      "per-engine applicability (enforced separately by engine oracle)"
+    ]
+  },
+  "profileChecks": {
+    "safe": {
+      "pass": true,
+      "checks": [
+        {
+          "id": "TARGET_UNIQUE",
+          "pass": true,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "HIDDEN_ANCESTOR_STATE",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "AX_IGNORED_STATE",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        }
+      ]
+    },
+    "invalid": {
+      "pass": false,
+      "checks": [
+        {
+          "id": "TARGET_UNIQUE",
+          "pass": true,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "HIDDEN_ANCESTOR_STATE",
+          "pass": false,
+          "expected": true,
+          "actual": false
+        },
+        {
+          "id": "AX_IGNORED_STATE",
+          "pass": false,
+          "expected": true,
+          "actual": false
+        }
+      ]
+    }
+  },
+  "baseline": {
+    "stable": true,
+    "runs": 3,
+    "representative": {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "button-name",
+        "execution": "EXECUTED",
+        "nodeCount": 0,
+        "targets": [],
+        "bucket": "inapplicable",
+        "outcome": "INAPPLICABLE",
+        "applicable": false
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 12,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+        "execution": "EXECUTED",
+        "outcome": "INAPPLICABLE",
+        "applicable": false,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 0,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 0,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          }
+        ],
+        "reason": "requested rule was selected, but produced no failed/passed/cantTell outcomes; no outcome filter is configured"
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "button",
+        "id": null,
+        "explicitRole": null,
+        "text": "",
+        "ariaHiddenAncestor": true,
+        "hiddenAncestorTag": "div",
+        "computed": {
+          "display": "inline-block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": false
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": true,
+          "role": "none",
+          "name": "",
+          "ignoredReasons": [
+            {
+              "name": "ariaHiddenSubtree",
+              "value": {
+                "type": "idref",
+                "relatedNodes": [
+                  {
+                    "backendDOMNodeId": 10,
+                    "idref": "hidden-wrapper"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "signature": "INAPPLICABLE|INAPPLICABLE",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    "observations": [
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 0,
+          "targets": [],
+          "bucket": "inapplicable",
+          "outcome": "INAPPLICABLE",
+          "applicable": false
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "INAPPLICABLE",
+          "applicable": false,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ],
+          "reason": "requested rule was selected, but produced no failed/passed/cantTell outcomes; no outcome filter is configured"
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": true,
+          "hiddenAncestorTag": "div",
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": true,
+            "role": "none",
+            "name": "",
+            "ignoredReasons": [
+              {
+                "name": "ariaHiddenSubtree",
+                "value": {
+                  "type": "idref",
+                  "relatedNodes": [
+                    {
+                      "backendDOMNodeId": 10,
+                      "idref": "hidden-wrapper"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "signature": "INAPPLICABLE|INAPPLICABLE",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 0,
+          "targets": [],
+          "bucket": "inapplicable",
+          "outcome": "INAPPLICABLE",
+          "applicable": false
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "INAPPLICABLE",
+          "applicable": false,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ],
+          "reason": "requested rule was selected, but produced no failed/passed/cantTell outcomes; no outcome filter is configured"
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": true,
+          "hiddenAncestorTag": "div",
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": true,
+            "role": "none",
+            "name": "",
+            "ignoredReasons": [
+              {
+                "name": "ariaHiddenSubtree",
+                "value": {
+                  "type": "idref",
+                  "relatedNodes": [
+                    {
+                      "backendDOMNodeId": 10,
+                      "idref": "hidden-wrapper"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "signature": "INAPPLICABLE|INAPPLICABLE",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 0,
+          "targets": [],
+          "bucket": "inapplicable",
+          "outcome": "INAPPLICABLE",
+          "applicable": false
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "INAPPLICABLE",
+          "applicable": false,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ],
+          "reason": "requested rule was selected, but produced no failed/passed/cantTell outcomes; no outcome filter is configured"
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": true,
+          "hiddenAncestorTag": "div",
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": true,
+            "role": "none",
+            "name": "",
+            "ignoredReasons": [
+              {
+                "name": "ariaHiddenSubtree",
+                "value": {
+                  "type": "idref",
+                  "relatedNodes": [
+                    {
+                      "backendDOMNodeId": 10,
+                      "idref": "hidden-wrapper"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "signature": "INAPPLICABLE|INAPPLICABLE",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      }
+    ],
+    "signatures": [
+      "INAPPLICABLE|INAPPLICABLE",
+      "INAPPLICABLE|INAPPLICABLE",
+      "INAPPLICABLE|INAPPLICABLE"
+    ],
+    "engineObservationKeys": [
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    ]
+  },
+  "safe": {
+    "stable": true,
+    "runs": 3,
+    "representative": {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "button-name",
+        "execution": "EXECUTED",
+        "nodeCount": 0,
+        "targets": [],
+        "bucket": "inapplicable",
+        "outcome": "INAPPLICABLE",
+        "applicable": false
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 12,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+        "execution": "EXECUTED",
+        "outcome": "INAPPLICABLE",
+        "applicable": false,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 0,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 0,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          }
+        ],
+        "reason": "requested rule was selected, but produced no failed/passed/cantTell outcomes; no outcome filter is configured"
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "button",
+        "id": null,
+        "explicitRole": null,
+        "text": "",
+        "ariaHiddenAncestor": true,
+        "hiddenAncestorTag": "div",
+        "computed": {
+          "display": "inline-block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": false
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": true,
+          "role": "none",
+          "name": "",
+          "ignoredReasons": [
+            {
+              "name": "ariaHiddenSubtree",
+              "value": {
+                "type": "idref",
+                "relatedNodes": [
+                  {
+                    "backendDOMNodeId": 10,
+                    "idref": "hidden-wrapper"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "signature": "INAPPLICABLE|INAPPLICABLE",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    "observations": [
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 0,
+          "targets": [],
+          "bucket": "inapplicable",
+          "outcome": "INAPPLICABLE",
+          "applicable": false
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "INAPPLICABLE",
+          "applicable": false,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ],
+          "reason": "requested rule was selected, but produced no failed/passed/cantTell outcomes; no outcome filter is configured"
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": true,
+          "hiddenAncestorTag": "div",
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": true,
+            "role": "none",
+            "name": "",
+            "ignoredReasons": [
+              {
+                "name": "ariaHiddenSubtree",
+                "value": {
+                  "type": "idref",
+                  "relatedNodes": [
+                    {
+                      "backendDOMNodeId": 10,
+                      "idref": "hidden-wrapper"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "signature": "INAPPLICABLE|INAPPLICABLE",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 0,
+          "targets": [],
+          "bucket": "inapplicable",
+          "outcome": "INAPPLICABLE",
+          "applicable": false
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "INAPPLICABLE",
+          "applicable": false,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ],
+          "reason": "requested rule was selected, but produced no failed/passed/cantTell outcomes; no outcome filter is configured"
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": true,
+          "hiddenAncestorTag": "div",
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": true,
+            "role": "none",
+            "name": "",
+            "ignoredReasons": [
+              {
+                "name": "ariaHiddenSubtree",
+                "value": {
+                  "type": "idref",
+                  "relatedNodes": [
+                    {
+                      "backendDOMNodeId": 10,
+                      "idref": "hidden-wrapper"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "signature": "INAPPLICABLE|INAPPLICABLE",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 0,
+          "targets": [],
+          "bucket": "inapplicable",
+          "outcome": "INAPPLICABLE",
+          "applicable": false
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "INAPPLICABLE",
+          "applicable": false,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ],
+          "reason": "requested rule was selected, but produced no failed/passed/cantTell outcomes; no outcome filter is configured"
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": true,
+          "hiddenAncestorTag": "div",
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": true,
+            "role": "none",
+            "name": "",
+            "ignoredReasons": [
+              {
+                "name": "ariaHiddenSubtree",
+                "value": {
+                  "type": "idref",
+                  "relatedNodes": [
+                    {
+                      "backendDOMNodeId": 10,
+                      "idref": "hidden-wrapper"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        "signature": "INAPPLICABLE|INAPPLICABLE",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      }
+    ],
+    "signatures": [
+      "INAPPLICABLE|INAPPLICABLE",
+      "INAPPLICABLE|INAPPLICABLE",
+      "INAPPLICABLE|INAPPLICABLE"
+    ],
+    "engineObservationKeys": [
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"INAPPLICABLE\",\"applicable\":false},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    ]
+  },
+  "invalid": {
+    "stable": true,
+    "runs": 3,
+    "representative": {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "button-name",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "button"
+          ]
+        ],
+        "bucket": "violations",
+        "outcome": "FAIL",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 12,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+        "execution": "EXECUTED",
+        "outcome": "FAIL",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "button",
+        "id": null,
+        "explicitRole": null,
+        "text": "",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "inline-block",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": false
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "button",
+          "name": "",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "FAIL|FAIL",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    "observations": [
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "violations",
+          "outcome": "FAIL",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "FAIL|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "violations",
+          "outcome": "FAIL",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "FAIL|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "button-name",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "button"
+            ]
+          ],
+          "bucket": "violations",
+          "outcome": "FAIL",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 12,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r12",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "button",
+          "id": null,
+          "explicitRole": null,
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "inline-block",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": false
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "button",
+            "name": "",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "FAIL|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      }
+    ],
+    "signatures": [
+      "FAIL|FAIL",
+      "FAIL|FAIL",
+      "FAIL|FAIL"
+    ],
+    "engineObservationKeys": [
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+name: source-checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  unit-and-syntax:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: calibration-0.6.2
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: calibration-0.6.2/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run check

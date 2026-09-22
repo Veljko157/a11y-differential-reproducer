@@ -1,0 +1,7231 @@
+{
+  "mode": "PROFILE_GATED",
+  "html": "<!DOCTYPE html><html lang=\"en\"><head>\n  <meta charset=\"utf-8\">\n  <title>Alfa #1883-style rowheader calibration fixture</title>\n</head>\n<body>\n  \n  \n  \n    \n      \n      \n      \n      <table>\n        <tbody>\n          <tr>\n            <th role=\"rowheader\" data-act-diff-target=\"primary\">a</th>\n            <td></td>\n            <td>two</td>\n          </tr>\n          <tr>\n            \n            \n            <td>noise-3</td>\n          </tr>\n        </tbody>\n      </table>\n      \n    \n    Calibration aside\n  \n  \n\n\n</body></html>",
+  "checks": 62,
+  "accepted": [
+    {
+      "pass": 1,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "unwrap",
+        "path": [
+          0
+        ],
+        "label": "unwrap<header>"
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 29,
+        "bodyElements": 24,
+        "bytes": 877
+      },
+      "afterStats": {
+        "elements": 28,
+        "bodyElements": 23,
+        "bytes": 860
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 2,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "unwrap",
+        "path": [
+          1
+        ],
+        "label": "unwrap<nav>"
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 28,
+        "bodyElements": 23,
+        "bytes": 860
+      },
+      "afterStats": {
+        "elements": 27,
+        "bodyElements": 22,
+        "bytes": 830
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 3,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "unwrap",
+        "path": [
+          2
+        ],
+        "label": "unwrap<main>"
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 27,
+        "bodyElements": 22,
+        "bytes": 830
+      },
+      "afterStats": {
+        "elements": 26,
+        "bodyElements": 21,
+        "bytes": 817
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 4,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "unwrap",
+        "path": [
+          2
+        ],
+        "label": "unwrap<section>"
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 26,
+        "bodyElements": 21,
+        "bytes": 817
+      },
+      "afterStats": {
+        "elements": 25,
+        "bodyElements": 20,
+        "bytes": 798
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 5,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "unwrap",
+        "path": [
+          3
+        ],
+        "label": "unwrap<div>"
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 25,
+        "bodyElements": 20,
+        "bytes": 798
+      },
+      "afterStats": {
+        "elements": 24,
+        "bodyElements": 19,
+        "bytes": 787
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 6,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "unwrap",
+        "path": [
+          7
+        ],
+        "label": "unwrap<aside>"
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 24,
+        "bodyElements": 19,
+        "bytes": 787
+      },
+      "afterStats": {
+        "elements": 23,
+        "bodyElements": 18,
+        "bytes": 772
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 7,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "unwrap",
+        "path": [
+          7
+        ],
+        "label": "unwrap<footer>"
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 23,
+        "bodyElements": 18,
+        "bytes": 772
+      },
+      "afterStats": {
+        "elements": 22,
+        "bodyElements": 17,
+        "bytes": 755
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 8,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<p>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 22,
+        "bodyElements": 17,
+        "bytes": 755
+      },
+      "afterStats": {
+        "elements": 21,
+        "bodyElements": 16,
+        "bytes": 724
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 9,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<a>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 21,
+        "bodyElements": 16,
+        "bytes": 724
+      },
+      "afterStats": {
+        "elements": 20,
+        "bodyElements": 15,
+        "bytes": 699
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 10,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<h1>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 20,
+        "bodyElements": 15,
+        "bytes": 699
+      },
+      "afterStats": {
+        "elements": 19,
+        "bodyElements": 14,
+        "bytes": 672
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 11,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<p>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 19,
+        "bodyElements": 14,
+        "bytes": 672
+      },
+      "afterStats": {
+        "elements": 18,
+        "bodyElements": 13,
+        "bytes": 639
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 12,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<h2>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 18,
+        "bodyElements": 13,
+        "bytes": 639
+      },
+      "afterStats": {
+        "elements": 17,
+        "bodyElements": 12,
+        "bytes": 615
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 13,
+      "candidateIndex": 6,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 17,
+        "bodyElements": 12,
+        "bytes": 615
+      },
+      "afterStats": {
+        "elements": 16,
+        "bodyElements": 11,
+        "bytes": 599
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 14,
+      "candidateIndex": 6,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 16,
+        "bodyElements": 11,
+        "bytes": 599
+      },
+      "afterStats": {
+        "elements": 15,
+        "bodyElements": 10,
+        "bytes": 583
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 15,
+      "candidateIndex": 7,
+      "operation": {
+        "type": "remove",
+        "path": [
+          1
+        ],
+        "label": "remove<p>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 15,
+        "bodyElements": 10,
+        "bytes": 583
+      },
+      "afterStats": {
+        "elements": 14,
+        "bodyElements": 9,
+        "bytes": 549
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 16,
+      "candidateIndex": 7,
+      "operation": {
+        "type": "remove",
+        "path": [
+          1
+        ],
+        "label": "remove<p>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 14,
+        "bodyElements": 9,
+        "bytes": 549
+      },
+      "afterStats": {
+        "elements": 13,
+        "bodyElements": 8,
+        "bytes": 518
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 17,
+      "candidateIndex": 8,
+      "operation": {
+        "type": "clear-text",
+        "path": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "label": "clear-text<td>"
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": true,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": true,
+              "expected": 2,
+              "actual": 2
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "ENGINE_AND_PROFILE_PRESERVED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 13,
+        "bodyElements": 8,
+        "bytes": 518
+      },
+      "afterStats": {
+        "elements": 13,
+        "bodyElements": 8,
+        "bytes": 515
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "pass": 13,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<table>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 13,
+      "candidateIndex": 1,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0
+        ],
+        "label": "remove<tbody>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 13,
+      "candidateIndex": 2,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 13,
+      "candidateIndex": 3,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 13,
+      "candidateIndex": 4,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 13,
+      "candidateIndex": 5,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 14,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<table>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 14,
+      "candidateIndex": 1,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0
+        ],
+        "label": "remove<tbody>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 14,
+      "candidateIndex": 2,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 14,
+      "candidateIndex": 3,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 14,
+      "candidateIndex": 4,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 14,
+      "candidateIndex": 5,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 15,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<table>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 15,
+      "candidateIndex": 1,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0
+        ],
+        "label": "remove<tbody>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 15,
+      "candidateIndex": 2,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 15,
+      "candidateIndex": 3,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 15,
+      "candidateIndex": 4,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 15,
+      "candidateIndex": 5,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 15,
+      "candidateIndex": 6,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 16,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<table>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 16,
+      "candidateIndex": 1,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0
+        ],
+        "label": "remove<tbody>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 16,
+      "candidateIndex": 2,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 16,
+      "candidateIndex": 3,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 16,
+      "candidateIndex": 4,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 16,
+      "candidateIndex": 5,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 16,
+      "candidateIndex": 6,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 17,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<table>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 17,
+      "candidateIndex": 1,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0
+        ],
+        "label": "remove<tbody>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 17,
+      "candidateIndex": 2,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 17,
+      "candidateIndex": 3,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 17,
+      "candidateIndex": 4,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 17,
+      "candidateIndex": 5,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 17,
+      "candidateIndex": 6,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 17,
+      "candidateIndex": 7,
+      "operation": {
+        "type": "clear-text",
+        "path": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "label": "clear-text<th>"
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<table>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 1,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0
+        ],
+        "label": "remove<tbody>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 2,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": false,
+          "count": 0,
+          "ax": {
+            "available": true,
+            "foundInDom": false,
+            "ignored": null,
+            "role": null,
+            "name": null
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 3,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": true,
+        "profile": {
+          "pass": false,
+          "checks": [
+            {
+              "id": "TARGET_UNIQUE",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            },
+            {
+              "id": "TARGET_TAG",
+              "pass": true,
+              "expected": "th",
+              "actual": "th"
+            },
+            {
+              "id": "EXPLICIT_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "AX_ROLE",
+              "pass": true,
+              "expected": "rowheader",
+              "actual": "rowheader"
+            },
+            {
+              "id": "ACCESSIBLE_NAME",
+              "pass": true,
+              "expected": "a",
+              "actual": "a",
+              "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+            },
+            {
+              "id": "TABLE_EXISTS",
+              "pass": true,
+              "expected": true,
+              "actual": true
+            },
+            {
+              "id": "TARGET_ROW_DATA_CELL_COUNT",
+              "pass": false,
+              "expected": 2,
+              "actual": 1
+            },
+            {
+              "id": "TABLE_HEADER_CANDIDATE_COUNT",
+              "pass": true,
+              "expected": 1,
+              "actual": 1
+            }
+          ]
+        },
+        "reason": "PROFILE_INVARIANT_VIOLATED"
+      },
+      "observedSignature": "PASS|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 4,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 5,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 6,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "label": "remove<td>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 7,
+      "operation": {
+        "type": "clear-text",
+        "path": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "label": "clear-text<th>"
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 8,
+      "operation": {
+        "type": "clear-text",
+        "path": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "label": "clear-text<td>"
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 9,
+      "operation": {
+        "type": "clear-text",
+        "path": [
+          0,
+          0,
+          1,
+          0
+        ],
+        "label": "clear-text<td>"
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    },
+    {
+      "pass": 18,
+      "candidateIndex": 10,
+      "operation": {
+        "type": "remove-attribute",
+        "path": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "attribute": "role",
+        "label": "remove-attr(role)<th>"
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": null,
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "decisionCandidateObservation": {
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": null,
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        }
+      }
+    }
+  ],
+  "stats": {
+    "before": {
+      "elements": 29,
+      "bodyElements": 24,
+      "bytes": 877
+    },
+    "after": {
+      "elements": 13,
+      "bodyElements": 8,
+      "bytes": 515
+    }
+  }
+}

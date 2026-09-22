@@ -1,0 +1,1479 @@
+{
+  "id": "EXP3",
+  "family": "IDREF/relationship",
+  "act": "a25f45",
+  "hypothesis": "A syntactically retained headers attribute is insufficient when its referenced relationship no longer resolves.",
+  "predeclaredExpectedPattern": {
+    "hypothesis": "A syntactically retained headers attribute is insufficient when its referenced relationship no longer resolves.",
+    "baselineSignature": "PASS|PASS",
+    "safeSignature": "PASS|PASS",
+    "invalidSignature": "FAIL|FAIL"
+  },
+  "observed": {
+    "baselineSignature": "PASS|PASS",
+    "safeSignature": "PASS|PASS",
+    "invalidSignature": "FAIL|FAIL",
+    "baselineStable": true,
+    "safeStable": true,
+    "invalidStable": true,
+    "safeEngineObservationPreserved": true,
+    "safeProfilePreserved": true,
+    "invalidProfilePreserved": false
+  },
+  "expectedPatternObserved": true,
+  "profile": {
+    "id": "idref-relationship-v0.1",
+    "family": "IDREF/relationship",
+    "mustPreserve": [
+      "unique target marker",
+      "headers token list",
+      "each headers target resolves",
+      "each headers target remains in the same table",
+      "resolved target element type and text identity"
+    ]
+  },
+  "profileChecks": {
+    "safe": {
+      "pass": true,
+      "checks": [
+        {
+          "id": "TARGET_UNIQUE",
+          "pass": true,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "HEADERS_TOKENS",
+          "pass": true,
+          "expected": [
+            "price-header"
+          ],
+          "actual": [
+            "price-header"
+          ]
+        },
+        {
+          "id": "HEADERS_ALL_RESOLVE",
+          "pass": true,
+          "expected": 1,
+          "actual": [
+            {
+              "id": "price-header",
+              "exists": true,
+              "tag": "th",
+              "sameTable": true,
+              "text": "Price"
+            }
+          ]
+        },
+        {
+          "id": "HEADERS_SAME_TABLE",
+          "pass": true,
+          "expected": true,
+          "actual": [
+            true
+          ]
+        },
+        {
+          "id": "HEADERS_RESOLVED_IDENTITY",
+          "pass": true,
+          "expected": [
+            {
+              "id": "price-header",
+              "tag": "th",
+              "text": "Price"
+            }
+          ],
+          "actual": [
+            {
+              "id": "price-header",
+              "tag": "th",
+              "text": "Price"
+            }
+          ]
+        }
+      ]
+    },
+    "invalid": {
+      "pass": false,
+      "checks": [
+        {
+          "id": "TARGET_UNIQUE",
+          "pass": true,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "HEADERS_TOKENS",
+          "pass": true,
+          "expected": [
+            "price-header"
+          ],
+          "actual": [
+            "price-header"
+          ]
+        },
+        {
+          "id": "HEADERS_ALL_RESOLVE",
+          "pass": false,
+          "expected": 1,
+          "actual": [
+            {
+              "id": "price-header",
+              "exists": false,
+              "tag": null,
+              "sameTable": false,
+              "text": null
+            }
+          ]
+        },
+        {
+          "id": "HEADERS_SAME_TABLE",
+          "pass": false,
+          "expected": true,
+          "actual": [
+            false
+          ]
+        },
+        {
+          "id": "HEADERS_RESOLVED_IDENTITY",
+          "pass": false,
+          "expected": [
+            {
+              "id": "price-header",
+              "tag": "th",
+              "text": "Price"
+            }
+          ],
+          "actual": [
+            {
+              "id": "price-header",
+              "tag": null,
+              "text": null
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "baseline": {
+    "stable": true,
+    "runs": 3,
+    "representative": {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "td-headers-attr",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "table"
+          ]
+        ],
+        "bucket": "passes",
+        "outcome": "PASS",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 45,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+        "execution": "EXECUTED",
+        "outcome": "PASS",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 0,
+          "passed": 1,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 0,
+          "passed": 1,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "td",
+        "id": null,
+        "explicitRole": null,
+        "text": "10",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "price-header",
+          "tokens": [
+            "price-header"
+          ],
+          "resolved": [
+            {
+              "id": "price-header",
+              "exists": true,
+              "tag": "th",
+              "sameTable": true,
+              "text": "Price"
+            }
+          ]
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "cell",
+          "name": "10",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "PASS|PASS",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    "observations": [
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "td-headers-attr",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 45,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "td",
+          "id": null,
+          "explicitRole": null,
+          "text": "10",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "price-header",
+            "tokens": [
+              "price-header"
+            ],
+            "resolved": [
+              {
+                "id": "price-header",
+                "exists": true,
+                "tag": "th",
+                "sameTable": true,
+                "text": "Price"
+              }
+            ]
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "cell",
+            "name": "10",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "td-headers-attr",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 45,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "td",
+          "id": null,
+          "explicitRole": null,
+          "text": "10",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "price-header",
+            "tokens": [
+              "price-header"
+            ],
+            "resolved": [
+              {
+                "id": "price-header",
+                "exists": true,
+                "tag": "th",
+                "sameTable": true,
+                "text": "Price"
+              }
+            ]
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "cell",
+            "name": "10",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "td-headers-attr",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 45,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "td",
+          "id": null,
+          "explicitRole": null,
+          "text": "10",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "price-header",
+            "tokens": [
+              "price-header"
+            ],
+            "resolved": [
+              {
+                "id": "price-header",
+                "exists": true,
+                "tag": "th",
+                "sameTable": true,
+                "text": "Price"
+              }
+            ]
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "cell",
+            "name": "10",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      }
+    ],
+    "signatures": [
+      "PASS|PASS",
+      "PASS|PASS",
+      "PASS|PASS"
+    ],
+    "engineObservationKeys": [
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    ]
+  },
+  "safe": {
+    "stable": true,
+    "runs": 3,
+    "representative": {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "td-headers-attr",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "table"
+          ]
+        ],
+        "bucket": "passes",
+        "outcome": "PASS",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 45,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+        "execution": "EXECUTED",
+        "outcome": "PASS",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 0,
+          "passed": 1,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 0,
+          "passed": 1,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "td",
+        "id": null,
+        "explicitRole": null,
+        "text": "10",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "price-header",
+          "tokens": [
+            "price-header"
+          ],
+          "resolved": [
+            {
+              "id": "price-header",
+              "exists": true,
+              "tag": "th",
+              "sameTable": true,
+              "text": "Price"
+            }
+          ]
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "cell",
+          "name": "10",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "PASS|PASS",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    "observations": [
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "td-headers-attr",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 45,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "td",
+          "id": null,
+          "explicitRole": null,
+          "text": "10",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "price-header",
+            "tokens": [
+              "price-header"
+            ],
+            "resolved": [
+              {
+                "id": "price-header",
+                "exists": true,
+                "tag": "th",
+                "sameTable": true,
+                "text": "Price"
+              }
+            ]
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "cell",
+            "name": "10",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "td-headers-attr",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 45,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "td",
+          "id": null,
+          "explicitRole": null,
+          "text": "10",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "price-header",
+            "tokens": [
+              "price-header"
+            ],
+            "resolved": [
+              {
+                "id": "price-header",
+                "exists": true,
+                "tag": "th",
+                "sameTable": true,
+                "text": "Price"
+              }
+            ]
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "cell",
+            "name": "10",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "td-headers-attr",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 45,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+          "execution": "EXECUTED",
+          "outcome": "PASS",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 0,
+            "passed": 1,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 0,
+              "passed": 1,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "td",
+          "id": null,
+          "explicitRole": null,
+          "text": "10",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "price-header",
+            "tokens": [
+              "price-header"
+            ],
+            "resolved": [
+              {
+                "id": "price-header",
+                "exists": true,
+                "tag": "th",
+                "sameTable": true,
+                "text": "Price"
+              }
+            ]
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "cell",
+            "name": "10",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|PASS",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      }
+    ],
+    "signatures": [
+      "PASS|PASS",
+      "PASS|PASS",
+      "PASS|PASS"
+    ],
+    "engineObservationKeys": [
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    ]
+  },
+  "invalid": {
+    "stable": true,
+    "runs": 3,
+    "representative": {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "td-headers-attr",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "table"
+          ]
+        ],
+        "bucket": "violations",
+        "outcome": "FAIL",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 45,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+        "execution": "EXECUTED",
+        "outcome": "FAIL",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "td",
+        "id": null,
+        "explicitRole": null,
+        "text": "10",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "price-header",
+          "tokens": [
+            "price-header"
+          ],
+          "resolved": [
+            {
+              "id": "price-header",
+              "exists": false,
+              "tag": null,
+              "sameTable": false,
+              "text": null
+            }
+          ]
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 1,
+          "headerCandidateCount": 0
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "LayoutTableCell",
+          "name": "10",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "FAIL|FAIL",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    "observations": [
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "td-headers-attr",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "violations",
+          "outcome": "FAIL",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 45,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "td",
+          "id": null,
+          "explicitRole": null,
+          "text": "10",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "price-header",
+            "tokens": [
+              "price-header"
+            ],
+            "resolved": [
+              {
+                "id": "price-header",
+                "exists": false,
+                "tag": null,
+                "sameTable": false,
+                "text": null
+              }
+            ]
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 0
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "LayoutTableCell",
+            "name": "10",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "FAIL|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "td-headers-attr",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "violations",
+          "outcome": "FAIL",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 45,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "td",
+          "id": null,
+          "explicitRole": null,
+          "text": "10",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "price-header",
+            "tokens": [
+              "price-header"
+            ],
+            "resolved": [
+              {
+                "id": "price-header",
+                "exists": false,
+                "tag": null,
+                "sameTable": false,
+                "text": null
+              }
+            ]
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 0
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "LayoutTableCell",
+            "name": "10",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "FAIL|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "td-headers-attr",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "violations",
+          "outcome": "FAIL",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 45,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r45",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "td",
+          "id": null,
+          "explicitRole": null,
+          "text": "10",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "price-header",
+            "tokens": [
+              "price-header"
+            ],
+            "resolved": [
+              {
+                "id": "price-header",
+                "exists": false,
+                "tag": null,
+                "sameTable": false,
+                "text": null
+              }
+            ]
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 1,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 1,
+            "headerCandidateCount": 0
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "LayoutTableCell",
+            "name": "10",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "FAIL|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      }
+    ],
+    "signatures": [
+      "FAIL|FAIL",
+      "FAIL|FAIL",
+      "FAIL|FAIL"
+    ],
+    "engineObservationKeys": [
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    ]
+  }
+}

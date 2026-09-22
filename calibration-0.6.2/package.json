@@ -1,0 +1,29 @@
+{
+  "name": "act-diff-calibration-pack",
+  "version": "0.6.2",
+  "private": true,
+  "type": "module",
+  "description": "Pre-grant calibration evidence pack for differential accessibility reproduction-validity contracts.",
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/check-syntax.mjs",
+    "preflight": "node src/cli.mjs preflight",
+    "exp:1": "node src/cli.mjs exp1",
+    "exp:2": "node src/cli.mjs exp2",
+    "exp:3": "node src/cli.mjs exp3",
+    "exp:4": "node src/cli.mjs exp4",
+    "exp:controlled": "node src/cli.mjs controlled",
+    "exp:all": "node src/cli.mjs all"
+  },
+  "engines": {
+    "node": ">=22.12"
+  },
+  "dependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@siteimprove/alfa-playwright": "0.84.2",
+    "@siteimprove/alfa-rules": "0.119.0",
+    "@siteimprove/alfa-test-utils": "0.84.2",
+    "@siteimprove/alfa-web": "0.119.0",
+    "playwright": "1.62.1"
+  }
+}

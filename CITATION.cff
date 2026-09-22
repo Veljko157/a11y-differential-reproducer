@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this pre-grant feasibility snapshot, please cite the software snapshot and its version."
+title: "A11y Differential Reproducer: pre-grant feasibility snapshot"
+type: software
+authors:
+  - family-names: "Spasojević"
+    given-names: "Veljko"
+version: "0.6.2-pregrant"
+date-released: "2026-09-22"
+license: "Apache-2.0"

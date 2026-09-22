@@ -1,0 +1,7 @@
+.DS_Store
+Thumbs.db
+*.log
+node_modules/
+calibration-0.6.2/node_modules/
+calibration-0.6.2/output/*
+!calibration-0.6.2/output/.gitkeep

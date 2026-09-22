@@ -1,0 +1,7 @@
+* text=auto eol=lf
+*.zip binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.pdf binary
+calibration-0.6.2/output-frozen-20260906-232212/** -text
