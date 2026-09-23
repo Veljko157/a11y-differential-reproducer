@@ -6,7 +6,7 @@ This repository publishes the **pre-grant feasibility/calibration work** behind 
 
 The narrow claim tested here is:
 
-> Preserving a stable target-level cross-engine observation is not necessarily sufficient to preserve a valid reproduction under an explicitly declared accessibility-state contract.
+> Preserving stable normalised rule-level observations and a unique target marker is not necessarily sufficient to preserve the conditions required by an explicitly declared accessibility-state contract.
 
 The calibration snapshot compares two acceptance oracles using the **same reducer, same candidate generator, same candidate ordering and same fixture**. Only the acceptance predicate changes:
 
@@ -61,7 +61,16 @@ The detailed boundary between completed work and requested work is in [`docs/PRE
 
 ## External transfer check
 
-A post-freeze check was separately recorded in the grant working evidence using W3C ACT rule `d0f69e` Failed Example 2. The raw machine outputs for that external run are **not present in the supplied `0.6.2` calibration archive**, so this repository does not present that transfer result as independently replayable evidence yet. See [`docs/EXTERNAL_TRANSFER_STATUS.md`](docs/EXTERNAL_TRANSFER_STATUS.md).
+The historical post-freeze summary for W3C ACT rule `d0f69e`, Failed Example 2, reports 9 versus 10 elements. Its original run artifact remains missing; [`docs/EXTERNAL_TRANSFER_STATUS.md`](docs/EXTERNAL_TRANSFER_STATUS.md) retains that historical record. A **separate author-run follow-up on 23 September 2026** produced 8 versus 9 elements and has its own saved source, observations, traces and hashes. See [the new result](docs/EXTERNAL_TRANSFER_RESULT_2026-09-23.md) and [the current evidence overview](docs/EXTERNAL_TRANSFER_FOLLOWUP.md). The new artifact does not recover the earlier run.
+
+## Practical use, impact and new external evidence
+
+An author-run exploratory follow-up on 23 September 2026 recorded `PATTERN_OBSERVED` on one previously known external W3C ACT example. The two final cases contain 8 and 9 DOM elements. Both preserve the selected normalised engine states, but only the profile-gated result preserves the declared checks. The saved artifact has been reviewed and its classification recalculated; this is not an independent browser replay or broad validation.
+
+See [the result and unchanged run files](docs/EXTERNAL_TRANSFER_RESULT_2026-09-23.md), [current evidence status](docs/EXTERNAL_TRANSFER_FOLLOWUP.md), and [completed preparation versus funded work](docs/PRE_GRANT_BOUNDARY_2026-09-23.md). The historical 9-versus-10 artifact remains missing. The original `v0.6.2-pregrant` tag is unchanged.
+
+The proposed Phase 1 will help maintainers and researchers prepare examples that others can verify. If an example contributes to an accepted engine fix or regression test, the benefit may reach products using the affected engine. These are potential effects, not measured reach or adoption. See [the practical use case](docs/IMPACT_AND_USE_CASE.md) and [the evaluation plan](docs/PRACTICAL_EVALUATION.md).
+
 
 ## Integrity
 
@@ -70,3 +79,4 @@ The original calibration subtree is kept as supplied. Its own [`SOURCE-SHA256.tx
 ## License
 
 Unless otherwise noted, original project code and documentation in this repository are licensed under the [Apache License 2.0](LICENSE). Third-party packages are not vendored and remain under their respective licenses.
+

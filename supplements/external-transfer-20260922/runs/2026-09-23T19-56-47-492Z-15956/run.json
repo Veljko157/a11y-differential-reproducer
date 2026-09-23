@@ -1,0 +1,10 @@
+{
+  "schema": "external-transfer-attempt-v1",
+  "startedAt": "2026-09-23T19:56:47.496Z",
+  "node": "v24.12.0",
+  "platform": "win32",
+  "arch": "x64",
+  "protocol": "PROTOCOL.md",
+  "kind": "New exploratory follow-up; historical summary already known",
+  "historicalRunRecovered": false
+}

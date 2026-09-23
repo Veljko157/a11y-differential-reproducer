@@ -32,6 +32,11 @@ Each controlled probe also preserves baseline/safe/invalid HTML snapshots in the
 
 The key observation in `04-hero-comparison.json` is a same-candidate divergence: the engine-only oracle accepts `remove<td>` while the profile-gated oracle rejects the corresponding state because the target-row data-cell witness count changes.
 
-## External transfer status
+## External transfer evidence
 
-See [`EXTERNAL_TRANSFER_STATUS.md`](EXTERNAL_TRANSFER_STATUS.md). The grant working record contains a post-freeze external ACT result, but the raw output bundle for that run was not included in the supplied calibration archive and is therefore not represented here as independently replayable evidence.
+Two separate records exist for the same previously known W3C ACT example:
+
+- **Historical summary:** 9 versus 10 elements; the original artifact remains missing. See [`EXTERNAL_TRANSFER_STATUS.md`](EXTERNAL_TRANSFER_STATUS.md).
+- **Author-run follow-up, 23 September 2026:** `PATTERN_OBSERVED`, 8 versus 9 elements, with the source, observations, decision traces and final HTML saved. See [the result and its limits](EXTERNAL_TRANSFER_RESULT_2026-09-23.md) and [the run files](../supplements/external-transfer-20260922/runs/2026-09-23T19-56-47-492Z-15956/).
+
+The follow-up artifact was checked and its classification recalculated from saved observations. This was not a new independent browser replay. It does not recover the historical run or count as held-out evaluation. The [current status](EXTERNAL_TRANSFER_FOLLOWUP.md) and [funding boundary](PRE_GRANT_BOUNDARY_2026-09-23.md) explain how it relates to the proposed Phase 1.

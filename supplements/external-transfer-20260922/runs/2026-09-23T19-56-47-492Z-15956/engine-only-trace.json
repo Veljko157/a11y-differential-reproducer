@@ -1,0 +1,605 @@
+{
+  "mode": "ENGINE_ONLY",
+  "html": "<!DOCTYPE html><html lang=\"en\"><head>\n\t<title>Failed Example 2</title>\n</head>\n<body>\n\t<table>\n\t\t<tbody><tr>\n\t\t\t\n\t\t\t<th id=\"col2\" data-act-diff-target=\"primary\">Starting with a Z</th>\n\t\t</tr>\n\t\t\n\t</tbody></table>\n\n</body></html>",
+  "checks": 13,
+  "accepted": [
+    {
+      "pass": 1,
+      "candidateIndex": 4,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          1
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_PRESERVED"
+      },
+      "observedSignature": "CANT_TELL|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": "col2",
+        "explicitRole": null,
+        "text": "Starting with a Z",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 0,
+          "headerCandidateCount": 2
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "columnheader",
+          "name": "Starting with a Z",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 12,
+        "bodyElements": 8,
+        "bytes": 306
+      },
+      "afterStats": {
+        "elements": 9,
+        "bodyElements": 5,
+        "bytes": 239
+      }
+    },
+    {
+      "pass": 2,
+      "candidateIndex": 3,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "label": "remove<th>",
+        "targetAncestor": false
+      },
+      "accept": true,
+      "stable": true,
+      "decision": {
+        "accept": true,
+        "engineObservationPreserved": true,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_PRESERVED"
+      },
+      "observedSignature": "CANT_TELL|FAIL",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": "col2",
+        "explicitRole": null,
+        "text": "Starting with a Z",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 0,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "LayoutTableCell",
+          "name": "Starting with a Z",
+          "ignoredReasons": []
+        }
+      },
+      "beforeStats": {
+        "elements": 9,
+        "bodyElements": 5,
+        "bytes": 239
+      },
+      "afterStats": {
+        "elements": 8,
+        "bodyElements": 4,
+        "bytes": 213
+      }
+    }
+  ],
+  "rejected": [
+    {
+      "pass": 1,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<table>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      }
+    },
+    {
+      "pass": 1,
+      "candidateIndex": 1,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0
+        ],
+        "label": "remove<tbody>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      }
+    },
+    {
+      "pass": 1,
+      "candidateIndex": 2,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      }
+    },
+    {
+      "pass": 1,
+      "candidateIndex": 3,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "label": "remove<th>",
+        "targetAncestor": false
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|PASS",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": "col2",
+        "explicitRole": null,
+        "text": "Starting with a Z",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 0,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "columnheader",
+          "name": "Starting with a Z",
+          "ignoredReasons": []
+        }
+      }
+    },
+    {
+      "pass": 2,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<table>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      }
+    },
+    {
+      "pass": 2,
+      "candidateIndex": 1,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0
+        ],
+        "label": "remove<tbody>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      }
+    },
+    {
+      "pass": 2,
+      "candidateIndex": 2,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      }
+    },
+    {
+      "pass": 3,
+      "candidateIndex": 0,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0
+        ],
+        "label": "remove<table>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      }
+    },
+    {
+      "pass": 3,
+      "candidateIndex": 1,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0
+        ],
+        "label": "remove<tbody>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      }
+    },
+    {
+      "pass": 3,
+      "candidateIndex": 2,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0
+        ],
+        "label": "remove<tr>",
+        "targetAncestor": true
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "INAPPLICABLE|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": false,
+        "count": 0,
+        "ax": {
+          "available": true,
+          "foundInDom": false,
+          "ignored": null,
+          "role": null,
+          "name": null
+        }
+      }
+    },
+    {
+      "pass": 3,
+      "candidateIndex": 3,
+      "operation": {
+        "type": "clear-text",
+        "path": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "label": "clear-text<th>"
+      },
+      "accept": false,
+      "stable": null,
+      "decision": {
+        "accept": false,
+        "engineObservationPreserved": false,
+        "profile": null,
+        "reason": "ENGINE_OBSERVATION_CHANGED"
+      },
+      "observedSignature": "PASS|INAPPLICABLE",
+      "observedTarget": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": "col2",
+        "explicitRole": null,
+        "text": "",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 0,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "LayoutTableCell",
+          "name": "",
+          "ignoredReasons": []
+        }
+      }
+    }
+  ],
+  "stats": {
+    "before": {
+      "elements": 12,
+      "bodyElements": 8,
+      "bytes": 306
+    },
+    "after": {
+      "elements": 8,
+      "bodyElements": 4,
+      "bytes": 213
+    }
+  }
+}

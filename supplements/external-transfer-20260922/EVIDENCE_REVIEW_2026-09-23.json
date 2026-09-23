@@ -1,0 +1,248 @@
+{
+  "reviewedOn": "2026-09-23",
+  "reviewType": "Static integrity, saved HTML inspection and recomputation of classification from supplied observations; no fresh browser or engine execution.",
+  "suppliedArchive": {
+    "file": "external-transfer-2026-09-23.zip",
+    "sha256": "01f4739cc0a679b0ef1d2702dad6818d3085fd5759853c2d90e6790a54b0f687",
+    "bytes": 17275,
+    "files": 17,
+    "crcValid": true
+  },
+  "runId": "2026-09-23T19-56-47-492Z-15956",
+  "recordedEnvironment": {
+    "generatedAt": "2026-09-23T19:57:40.427Z",
+    "node": "v24.12.0",
+    "platform": "win32",
+    "arch": "x64",
+    "chromium": "151.0.7922.34",
+    "packages": {
+      "@axe-core/playwright": "4.13.0",
+      "@siteimprove/alfa-playwright": "0.84.2",
+      "@siteimprove/alfa-test-utils": "0.84.2",
+      "@siteimprove/alfa-rules": "0.119.0",
+      "@siteimprove/alfa-web": "0.119.0",
+      "playwright": "1.62.1"
+    },
+    "viewport": {
+      "width": 1280,
+      "height": 720
+    },
+    "locale": "en-US",
+    "colorScheme": "light",
+    "reducedMotion": "no-preference",
+    "forcedColors": "none",
+    "timezoneId": "UTC",
+    "javaScriptEnabled": true
+  },
+  "fileHashes": [
+    {
+      "file": "baseline.json",
+      "sha256": "468c33a66f097007079bc825561a1eb184f175df7c0cf235f99e03d37b6e88c7",
+      "matches": true
+    },
+    {
+      "file": "control-preflight.json",
+      "sha256": "b8aa2611e82db8a1f7a71a5540dc1cd2d401443b0f0f49d03cbc267da1e232f9",
+      "matches": true
+    },
+    {
+      "file": "core-integrity.json",
+      "sha256": "f74e1631592e61fa6f36eece9d95d3dcc6665d30cb79a39026365e53b4a6b008",
+      "matches": true
+    },
+    {
+      "file": "engine-only-trace.json",
+      "sha256": "120fb8d54746d7e5c17e7ba849d08e56037c99a89ddd8b49f59e6c828178299f",
+      "matches": true
+    },
+    {
+      "file": "engine-only.html",
+      "sha256": "8d3bd6b9fca318c5cfea6adb037c3945c26fc21054a964c29005106e6ff9d7d0",
+      "matches": true
+    },
+    {
+      "file": "environment.json",
+      "sha256": "69be5d0699defc6a8947de7be0f00386077f2bade4d4c7ed7f20fce75860ef64",
+      "matches": true
+    },
+    {
+      "file": "final-engine-only.json",
+      "sha256": "ebfd04925819966c06edccf98c801a4205d432dec45fc9fe7abb52f0ff57f876",
+      "matches": true
+    },
+    {
+      "file": "final-profile-gated.json",
+      "sha256": "dd8348e441c0a91bf5463585e1bd817b67cf751630c6fa382b3e46c613e987bd",
+      "matches": true
+    },
+    {
+      "file": "input.instrumented.html",
+      "sha256": "1e654823752fba3801d68779e2a0a4c374da0299ba33077509a206afac1f1db0",
+      "matches": true
+    },
+    {
+      "file": "profile-gated-trace.json",
+      "sha256": "2e9cf8f305ad01d0fc6db962dd6d65177ddd937ba3ca84f70dda654c339bd09a",
+      "matches": true
+    },
+    {
+      "file": "profile-gated.html",
+      "sha256": "5e8cc7fdfe6976ba91018e53f0074eb94fb520899ace6792f32d243e3200e9a8",
+      "matches": true
+    },
+    {
+      "file": "profile.json",
+      "sha256": "42f8920783f94cd35aacedd822ac0939a453d936e3aa6a70809c06da09176056",
+      "matches": true
+    },
+    {
+      "file": "result.json",
+      "sha256": "a1ca9494ff8057870c5a98863a73ec173543fe7c42b013fbaf046b3ef0aa6aa7",
+      "matches": true
+    },
+    {
+      "file": "run.json",
+      "sha256": "1582dcdf5a1cc9a2c263e9b11819615723df7dbb1e237c0f185b4a43540b32e5",
+      "matches": true
+    },
+    {
+      "file": "source.json",
+      "sha256": "7dff06a1acf25dfa61b8a07a4d2cf581c27424a5d5a45835749da06bcfb1429b",
+      "matches": true
+    },
+    {
+      "file": "source.original.html",
+      "sha256": "dfcba329f2af97cf6cdf1115b991ded8b0b2e46bc701f7460df79bcf0f40cf1d",
+      "matches": true
+    }
+  ],
+  "completeManifestCoverage": true,
+  "frozenCore": {
+    "recordedEntries": 35,
+    "allRecordedDigestsMatchOriginalPublishArchive": true,
+    "originalSourcesIndependentlyHashed": true,
+    "note": "The run reports the source integrity check; the review compares that report with original source bytes. This does not authenticate the execution machine."
+  },
+  "source": {
+    "officialFixtureMatchesPreviouslyRetrievedBytes": true,
+    "onlyTargetMarkerAdded": true,
+    "originalBytes": 277,
+    "instrumentedBytes": 308,
+    "sourceSha256": "dfcba329f2af97cf6cdf1115b991ded8b0b2e46bc701f7460df79bcf0f40cf1d"
+  },
+  "declaredDependencyVersionsMatchFrozenPackage": true,
+  "finalHtml": [
+    {
+      "file": "engine-only.html",
+      "elements": 8,
+      "bodyElements": 4,
+      "headerCount": 1,
+      "savedFileBytes": 228,
+      "documentElementBytes": 213,
+      "matchesRecordedStats": true
+    },
+    {
+      "file": "profile-gated.html",
+      "elements": 9,
+      "bodyElements": 5,
+      "headerCount": 2,
+      "savedFileBytes": 237,
+      "documentElementBytes": 222,
+      "matchesRecordedStats": true
+    }
+  ],
+  "previouslyPastedResultMatchesArchive": true,
+  "recordedRunSeconds": 125.408,
+  "classificationAudit": {
+    "reviewMethod": "Recomputed from supplied saved observations and traces using the supplied unchanged classifier and frozen profile/state functions. No browser or engine was rerun.",
+    "classification": "PATTERN_OBSERVED",
+    "completeComputedResultMatches": true,
+    "observations": [
+      {
+        "name": "control",
+        "observationCount": 3,
+        "signature": "PASS|FAIL",
+        "internallyConsistent": true
+      },
+      {
+        "name": "baseline",
+        "observationCount": 3,
+        "signature": "CANT_TELL|FAIL",
+        "internallyConsistent": true
+      },
+      {
+        "name": "engine-only-final",
+        "observationCount": 3,
+        "signature": "CANT_TELL|FAIL",
+        "internallyConsistent": true
+      },
+      {
+        "name": "profile-gated-final",
+        "observationCount": 3,
+        "signature": "CANT_TELL|FAIL",
+        "internallyConsistent": true
+      }
+    ],
+    "profileMetadataMatchesFrozenImplementation": true,
+    "recordedCandidateProfileDecisionsRecomputed": true,
+    "traceHtmlMatchesSavedFiles": true,
+    "traceRecordCountsMatch": true,
+    "checks": {
+      "eligibleBaseline": true,
+      "stableEngineOnlyFinal": true,
+      "stableGatedFinal": true,
+      "engineObservationsPreserved": true,
+      "gatedObservationsPreserved": true,
+      "engineOnlyProfileViolated": true,
+      "gatedProfilePreserved": true,
+      "sameCandidateDivergence": true,
+      "sameAcceptedPrefix": true
+    },
+    "firstDivergence": {
+      "pass": 2,
+      "candidateIndex": 3,
+      "operation": {
+        "type": "remove",
+        "path": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "label": "remove<th>",
+        "targetAncestor": false
+      }
+    },
+    "profileOutcomes": {
+      "baseline": [
+        true,
+        true,
+        true
+      ],
+      "engineOnlyFinal": [
+        false,
+        false,
+        false
+      ],
+      "profileGatedFinal": [
+        true,
+        true,
+        true
+      ]
+    }
+  },
+  "interpretation": {
+    "conclusion": "Recorded evidence supports the declared PATTERN_OBSERVED classification on this one previously known external example.",
+    "normalisedObservationBoundary": "Execution, applicability, selected rule outcome and target marker identity are preserved. The full engine diagnostics are not invariant: Alfa passed count changes from 1 to 0 in both final states.",
+    "profileMetadataBoundary": "Frozen profile metadata still refers to rowheader; executable predicates compare to this external baseline with explicitRole=null and AX role=columnheader. Raw metadata has not been rewritten.",
+    "profileCoverageBoundary": "Both arms remove the data row. The profile preserves declared predicates, not all table relations or all ACT conditions.",
+    "notEstablished": [
+      "A fresh independent browser replay by the reviewer",
+      "Recovery of historical 9-versus-10 run",
+      "Blind or held-out validation",
+      "Which engine is correct",
+      "General coverage, adoption, user-time savings or downstream website benefit",
+      "Completion of the funded Phase 1 workflow, bundle format or standalone verifier"
+    ]
+  }
+}

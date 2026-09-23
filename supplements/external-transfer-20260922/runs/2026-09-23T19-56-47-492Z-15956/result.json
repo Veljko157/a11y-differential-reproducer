@@ -1,0 +1,618 @@
+{
+  "status": "PATTERN_OBSERVED",
+  "eligibility": {
+    "eligible": true,
+    "checks": {
+      "stableThreeRuns": true,
+      "enginesExecuted": true,
+      "applicableKnownContrast": true,
+      "targetUnique": true,
+      "baselineProfilePreserved": true
+    }
+  },
+  "checks": {
+    "eligibleBaseline": true,
+    "stableEngineOnlyFinal": true,
+    "stableGatedFinal": true,
+    "engineObservationsPreserved": true,
+    "gatedObservationsPreserved": true,
+    "engineOnlyProfileViolated": true,
+    "gatedProfilePreserved": true,
+    "sameCandidateDivergence": true,
+    "sameAcceptedPrefix": true
+  },
+  "firstOracleDivergence": {
+    "pass": 2,
+    "candidateIndex": 3,
+    "operation": {
+      "type": "remove",
+      "path": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "label": "remove<th>",
+      "targetAncestor": false
+    },
+    "observedTarget": {
+      "selector": "[data-act-diff-target='primary']",
+      "exists": true,
+      "count": 1,
+      "tag": "th",
+      "id": "col2",
+      "explicitRole": null,
+      "text": "Starting with a Z",
+      "ariaHiddenAncestor": false,
+      "hiddenAncestorTag": null,
+      "computed": {
+        "display": "table-cell",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "headers": {
+        "raw": "",
+        "tokens": [],
+        "resolved": []
+      },
+      "labelledby": {
+        "raw": "",
+        "tokens": [],
+        "resolved": []
+      },
+      "table": {
+        "exists": true,
+        "rowCount": 1,
+        "targetRowIndex": 0,
+        "sameRowDataCellCount": 0,
+        "headerCandidateCount": 1
+      },
+      "ax": {
+        "available": true,
+        "foundInDom": true,
+        "ignored": false,
+        "role": "LayoutTableCell",
+        "name": "Starting with a Z",
+        "ignoredReasons": []
+      }
+    },
+    "observedSignature": "CANT_TELL|FAIL",
+    "profile": {
+      "pass": false,
+      "checks": [
+        {
+          "id": "TARGET_UNIQUE",
+          "pass": true,
+          "expected": 1,
+          "actual": 1
+        },
+        {
+          "id": "TARGET_TAG",
+          "pass": true,
+          "expected": "th",
+          "actual": "th"
+        },
+        {
+          "id": "EXPLICIT_ROLE",
+          "pass": true,
+          "expected": null,
+          "actual": null
+        },
+        {
+          "id": "AX_ROLE",
+          "pass": false,
+          "expected": "columnheader",
+          "actual": "LayoutTableCell"
+        },
+        {
+          "id": "ACCESSIBLE_NAME",
+          "pass": true,
+          "expected": "Starting with a Z",
+          "actual": "Starting with a Z",
+          "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+        },
+        {
+          "id": "TABLE_EXISTS",
+          "pass": true,
+          "expected": true,
+          "actual": true
+        },
+        {
+          "id": "TARGET_ROW_DATA_CELL_COUNT",
+          "pass": true,
+          "expected": 0,
+          "actual": 0
+        },
+        {
+          "id": "TABLE_HEADER_CANDIDATE_COUNT",
+          "pass": false,
+          "expected": 2,
+          "actual": 1
+        }
+      ]
+    }
+  },
+  "matchedProfileGatedDecision": {
+    "pass": 2,
+    "candidateIndex": 3,
+    "operation": {
+      "type": "remove",
+      "path": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "label": "remove<th>",
+      "targetAncestor": false
+    },
+    "accept": false,
+    "stable": null,
+    "decision": {
+      "accept": false,
+      "engineObservationPreserved": true,
+      "profile": {
+        "pass": false,
+        "checks": [
+          {
+            "id": "TARGET_UNIQUE",
+            "pass": true,
+            "expected": 1,
+            "actual": 1
+          },
+          {
+            "id": "TARGET_TAG",
+            "pass": true,
+            "expected": "th",
+            "actual": "th"
+          },
+          {
+            "id": "EXPLICIT_ROLE",
+            "pass": true,
+            "expected": null,
+            "actual": null
+          },
+          {
+            "id": "AX_ROLE",
+            "pass": false,
+            "expected": "columnheader",
+            "actual": "LayoutTableCell"
+          },
+          {
+            "id": "ACCESSIBLE_NAME",
+            "pass": true,
+            "expected": "Starting with a Z",
+            "actual": "Starting with a Z",
+            "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+          },
+          {
+            "id": "TABLE_EXISTS",
+            "pass": true,
+            "expected": true,
+            "actual": true
+          },
+          {
+            "id": "TARGET_ROW_DATA_CELL_COUNT",
+            "pass": true,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "id": "TABLE_HEADER_CANDIDATE_COUNT",
+            "pass": false,
+            "expected": 2,
+            "actual": 1
+          }
+        ]
+      },
+      "reason": "PROFILE_INVARIANT_VIOLATED"
+    },
+    "observedSignature": "CANT_TELL|FAIL",
+    "observedTarget": {
+      "selector": "[data-act-diff-target='primary']",
+      "exists": true,
+      "count": 1,
+      "tag": "th",
+      "id": "col2",
+      "explicitRole": null,
+      "text": "Starting with a Z",
+      "ariaHiddenAncestor": false,
+      "hiddenAncestorTag": null,
+      "computed": {
+        "display": "table-cell",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "headers": {
+        "raw": "",
+        "tokens": [],
+        "resolved": []
+      },
+      "labelledby": {
+        "raw": "",
+        "tokens": [],
+        "resolved": []
+      },
+      "table": {
+        "exists": true,
+        "rowCount": 1,
+        "targetRowIndex": 0,
+        "sameRowDataCellCount": 0,
+        "headerCandidateCount": 1
+      },
+      "ax": {
+        "available": true,
+        "foundInDom": true,
+        "ignored": false,
+        "role": "LayoutTableCell",
+        "name": "Starting with a Z",
+        "ignoredReasons": []
+      }
+    }
+  },
+  "engineOnly": {
+    "stats": {
+      "before": {
+        "elements": 12,
+        "bodyElements": 8,
+        "bytes": 306
+      },
+      "after": {
+        "elements": 8,
+        "bodyElements": 4,
+        "bytes": 213
+      }
+    },
+    "checks": 13,
+    "finalProfileChecks": [
+      {
+        "pass": false,
+        "checks": [
+          {
+            "id": "TARGET_UNIQUE",
+            "pass": true,
+            "expected": 1,
+            "actual": 1
+          },
+          {
+            "id": "TARGET_TAG",
+            "pass": true,
+            "expected": "th",
+            "actual": "th"
+          },
+          {
+            "id": "EXPLICIT_ROLE",
+            "pass": true,
+            "expected": null,
+            "actual": null
+          },
+          {
+            "id": "AX_ROLE",
+            "pass": false,
+            "expected": "columnheader",
+            "actual": "LayoutTableCell"
+          },
+          {
+            "id": "ACCESSIBLE_NAME",
+            "pass": true,
+            "expected": "Starting with a Z",
+            "actual": "Starting with a Z",
+            "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+          },
+          {
+            "id": "TABLE_EXISTS",
+            "pass": true,
+            "expected": true,
+            "actual": true
+          },
+          {
+            "id": "TARGET_ROW_DATA_CELL_COUNT",
+            "pass": true,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "id": "TABLE_HEADER_CANDIDATE_COUNT",
+            "pass": false,
+            "expected": 2,
+            "actual": 1
+          }
+        ]
+      },
+      {
+        "pass": false,
+        "checks": [
+          {
+            "id": "TARGET_UNIQUE",
+            "pass": true,
+            "expected": 1,
+            "actual": 1
+          },
+          {
+            "id": "TARGET_TAG",
+            "pass": true,
+            "expected": "th",
+            "actual": "th"
+          },
+          {
+            "id": "EXPLICIT_ROLE",
+            "pass": true,
+            "expected": null,
+            "actual": null
+          },
+          {
+            "id": "AX_ROLE",
+            "pass": false,
+            "expected": "columnheader",
+            "actual": "LayoutTableCell"
+          },
+          {
+            "id": "ACCESSIBLE_NAME",
+            "pass": true,
+            "expected": "Starting with a Z",
+            "actual": "Starting with a Z",
+            "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+          },
+          {
+            "id": "TABLE_EXISTS",
+            "pass": true,
+            "expected": true,
+            "actual": true
+          },
+          {
+            "id": "TARGET_ROW_DATA_CELL_COUNT",
+            "pass": true,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "id": "TABLE_HEADER_CANDIDATE_COUNT",
+            "pass": false,
+            "expected": 2,
+            "actual": 1
+          }
+        ]
+      },
+      {
+        "pass": false,
+        "checks": [
+          {
+            "id": "TARGET_UNIQUE",
+            "pass": true,
+            "expected": 1,
+            "actual": 1
+          },
+          {
+            "id": "TARGET_TAG",
+            "pass": true,
+            "expected": "th",
+            "actual": "th"
+          },
+          {
+            "id": "EXPLICIT_ROLE",
+            "pass": true,
+            "expected": null,
+            "actual": null
+          },
+          {
+            "id": "AX_ROLE",
+            "pass": false,
+            "expected": "columnheader",
+            "actual": "LayoutTableCell"
+          },
+          {
+            "id": "ACCESSIBLE_NAME",
+            "pass": true,
+            "expected": "Starting with a Z",
+            "actual": "Starting with a Z",
+            "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+          },
+          {
+            "id": "TABLE_EXISTS",
+            "pass": true,
+            "expected": true,
+            "actual": true
+          },
+          {
+            "id": "TARGET_ROW_DATA_CELL_COUNT",
+            "pass": true,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "id": "TABLE_HEADER_CANDIDATE_COUNT",
+            "pass": false,
+            "expected": 2,
+            "actual": 1
+          }
+        ]
+      }
+    ]
+  },
+  "profileGated": {
+    "stats": {
+      "before": {
+        "elements": 12,
+        "bodyElements": 8,
+        "bytes": 306
+      },
+      "after": {
+        "elements": 9,
+        "bodyElements": 5,
+        "bytes": 222
+      }
+    },
+    "checks": 21,
+    "finalProfileChecks": [
+      {
+        "pass": true,
+        "checks": [
+          {
+            "id": "TARGET_UNIQUE",
+            "pass": true,
+            "expected": 1,
+            "actual": 1
+          },
+          {
+            "id": "TARGET_TAG",
+            "pass": true,
+            "expected": "th",
+            "actual": "th"
+          },
+          {
+            "id": "EXPLICIT_ROLE",
+            "pass": true,
+            "expected": null,
+            "actual": null
+          },
+          {
+            "id": "AX_ROLE",
+            "pass": true,
+            "expected": "columnheader",
+            "actual": "columnheader"
+          },
+          {
+            "id": "ACCESSIBLE_NAME",
+            "pass": true,
+            "expected": "Starting with a Z",
+            "actual": "Starting with a Z",
+            "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+          },
+          {
+            "id": "TABLE_EXISTS",
+            "pass": true,
+            "expected": true,
+            "actual": true
+          },
+          {
+            "id": "TARGET_ROW_DATA_CELL_COUNT",
+            "pass": true,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "id": "TABLE_HEADER_CANDIDATE_COUNT",
+            "pass": true,
+            "expected": 2,
+            "actual": 2
+          }
+        ]
+      },
+      {
+        "pass": true,
+        "checks": [
+          {
+            "id": "TARGET_UNIQUE",
+            "pass": true,
+            "expected": 1,
+            "actual": 1
+          },
+          {
+            "id": "TARGET_TAG",
+            "pass": true,
+            "expected": "th",
+            "actual": "th"
+          },
+          {
+            "id": "EXPLICIT_ROLE",
+            "pass": true,
+            "expected": null,
+            "actual": null
+          },
+          {
+            "id": "AX_ROLE",
+            "pass": true,
+            "expected": "columnheader",
+            "actual": "columnheader"
+          },
+          {
+            "id": "ACCESSIBLE_NAME",
+            "pass": true,
+            "expected": "Starting with a Z",
+            "actual": "Starting with a Z",
+            "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+          },
+          {
+            "id": "TABLE_EXISTS",
+            "pass": true,
+            "expected": true,
+            "actual": true
+          },
+          {
+            "id": "TARGET_ROW_DATA_CELL_COUNT",
+            "pass": true,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "id": "TABLE_HEADER_CANDIDATE_COUNT",
+            "pass": true,
+            "expected": 2,
+            "actual": 2
+          }
+        ]
+      },
+      {
+        "pass": true,
+        "checks": [
+          {
+            "id": "TARGET_UNIQUE",
+            "pass": true,
+            "expected": 1,
+            "actual": 1
+          },
+          {
+            "id": "TARGET_TAG",
+            "pass": true,
+            "expected": "th",
+            "actual": "th"
+          },
+          {
+            "id": "EXPLICIT_ROLE",
+            "pass": true,
+            "expected": null,
+            "actual": null
+          },
+          {
+            "id": "AX_ROLE",
+            "pass": true,
+            "expected": "columnheader",
+            "actual": "columnheader"
+          },
+          {
+            "id": "ACCESSIBLE_NAME",
+            "pass": true,
+            "expected": "Starting with a Z",
+            "actual": "Starting with a Z",
+            "note": "case-identity predicate; not asserted as an ACT d0f69e expectation"
+          },
+          {
+            "id": "TABLE_EXISTS",
+            "pass": true,
+            "expected": true,
+            "actual": true
+          },
+          {
+            "id": "TARGET_ROW_DATA_CELL_COUNT",
+            "pass": true,
+            "expected": 0,
+            "actual": 0
+          },
+          {
+            "id": "TABLE_HEADER_CANDIDATE_COUNT",
+            "pass": true,
+            "expected": 2,
+            "actual": 2
+          }
+        ]
+      }
+    ]
+  },
+  "observedBaseline": [
+    "CANT_TELL|FAIL",
+    "CANT_TELL|FAIL",
+    "CANT_TELL|FAIL"
+  ],
+  "completedAt": "2026-09-23T19:58:52.904Z",
+  "historicalRunRecovered": false
+}

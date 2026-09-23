@@ -1,0 +1,420 @@
+{
+  "heroFixture": "B:\\NLnet\\GIT_TEST\\a11y-differential-reproducer\\calibration-0.6.2\\fixtures\\04-alfa-1883-style.html",
+  "externalFixtureOverride": false,
+  "expectedSignature": "PASS|FAIL",
+  "observedSignature": "PASS|FAIL",
+  "act": "d0f69e",
+  "rules": {
+    "axe": "th-has-data-cells",
+    "alfa": "SIA-R46"
+  },
+  "checks": {
+    "stable": true,
+    "expectedSignature": true,
+    "uniqueTarget": true,
+    "axeExecuted": true,
+    "alfaExecuted": true,
+    "alfaRuleSelected": true
+  },
+  "ready": true,
+  "baseline": {
+    "stable": true,
+    "runs": 3,
+    "representative": {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "th-has-data-cells",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "table"
+          ]
+        ],
+        "bucket": "passes",
+        "outcome": "PASS",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 46,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r46",
+        "execution": "EXECUTED",
+        "outcome": "FAIL",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": null,
+        "explicitRole": "rowheader",
+        "text": "a",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 2,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 2,
+          "headerCandidateCount": 1
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "rowheader",
+          "name": "a",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "PASS|FAIL",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    "observations": [
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "th-has-data-cells",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 46,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r46",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "th-has-data-cells",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 46,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r46",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      },
+      {
+        "axe": {
+          "engine": "axe",
+          "ruleId": "th-has-data-cells",
+          "execution": "EXECUTED",
+          "nodeCount": 1,
+          "targets": [
+            [
+              "table"
+            ]
+          ],
+          "bucket": "passes",
+          "outcome": "PASS",
+          "applicable": true
+        },
+        "alfa": {
+          "engine": "alfa",
+          "ruleNumber": 46,
+          "ruleUri": "https://alfa.siteimprove.com/rules/sia-r46",
+          "execution": "EXECUTED",
+          "outcome": "FAIL",
+          "applicable": true,
+          "selection": {
+            "visited": 88,
+            "selected": 1
+          },
+          "aggregateCount": 1,
+          "bucketAggregates": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "totals": {
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          },
+          "materializedDiagnostics": [
+            {
+              "containerKind": "array-entry",
+              "constructor": "Object",
+              "keys": [
+                "failed",
+                "passed",
+                "cantTell"
+              ],
+              "failed": 1,
+              "passed": 0,
+              "cantTell": 0
+            }
+          ]
+        },
+        "target": {
+          "selector": "[data-act-diff-target='primary']",
+          "exists": true,
+          "count": 1,
+          "tag": "th",
+          "id": null,
+          "explicitRole": "rowheader",
+          "text": "a",
+          "ariaHiddenAncestor": false,
+          "hiddenAncestorTag": null,
+          "computed": {
+            "display": "table-cell",
+            "visibility": "visible",
+            "opacity": "1"
+          },
+          "headers": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "labelledby": {
+            "raw": "",
+            "tokens": [],
+            "resolved": []
+          },
+          "table": {
+            "exists": true,
+            "rowCount": 2,
+            "targetRowIndex": 0,
+            "sameRowDataCellCount": 2,
+            "headerCandidateCount": 1
+          },
+          "ax": {
+            "available": true,
+            "foundInDom": true,
+            "ignored": false,
+            "role": "rowheader",
+            "name": "a",
+            "ignoredReasons": []
+          }
+        },
+        "signature": "PASS|FAIL",
+        "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+      }
+    ],
+    "signatures": [
+      "PASS|FAIL",
+      "PASS|FAIL",
+      "PASS|FAIL"
+    ],
+    "engineObservationKeys": [
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+      "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"PASS\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    ]
+  }
+}

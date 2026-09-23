@@ -1,0 +1,11 @@
+{
+  "sourceUrl": "https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/d0f69e/6bb6ca5dcdbd1fef063561f61de88740db24bd5d.html",
+  "ruleUrl": "https://www.w3.org/WAI/standards-guidelines/act/rules/d0f69e/proposed/",
+  "retrievedOn": "2026-09-22",
+  "sourceSha256": "dfcba329f2af97cf6cdf1115b991ded8b0b2e46bc701f7460df79bcf0f40cf1d",
+  "sourceBytes": 277,
+  "instrumentation": "Add only data-act-diff-target=\"primary\" to the th with id=\"col2\".",
+  "attribution": "W3C ACT rule d0f69e, Failed Example 2. Original source retained separately from the instrumented fixture.",
+  "licenseReference": "https://www.w3.org/copyright/software-license-2023/",
+  "historicalRunRecovered": false
+}

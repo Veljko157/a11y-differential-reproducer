@@ -1,0 +1,19 @@
+{
+  "id": "alfa-1883-rowheader-structure-v0.1",
+  "family": "structural/set-based",
+  "rationale": [
+    "This is a configured reproduction-validity contract for the #1883-style case.",
+    "It is not a claim that ACT d0f69e requires a non-empty header name.",
+    "The contract preserves the explicit rowheader case identity and the table relation being debugged."
+  ],
+  "mustPreserve": [
+    "unique target marker",
+    "target remains a th element",
+    "explicit role=rowheader remains present",
+    "AX role remains rowheader",
+    "target accessible-name value remains the baseline case identity",
+    "target remains in a table",
+    "same number of data-cell witnesses in the target row",
+    "same number of header candidates in the target table"
+  ]
+}

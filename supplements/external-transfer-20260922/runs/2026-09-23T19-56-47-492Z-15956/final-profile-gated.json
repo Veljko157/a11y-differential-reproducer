@@ -1,0 +1,400 @@
+{
+  "stable": true,
+  "runs": 3,
+  "representative": {
+    "axe": {
+      "engine": "axe",
+      "ruleId": "th-has-data-cells",
+      "execution": "EXECUTED",
+      "nodeCount": 1,
+      "targets": [
+        [
+          "table"
+        ]
+      ],
+      "bucket": "incomplete",
+      "outcome": "CANT_TELL",
+      "applicable": true
+    },
+    "alfa": {
+      "engine": "alfa",
+      "ruleNumber": 46,
+      "ruleUri": "https://alfa.siteimprove.com/rules/sia-r46",
+      "execution": "EXECUTED",
+      "outcome": "FAIL",
+      "applicable": true,
+      "selection": {
+        "visited": 88,
+        "selected": 1
+      },
+      "aggregateCount": 1,
+      "bucketAggregates": {
+        "failed": 1,
+        "passed": 0,
+        "cantTell": 0
+      },
+      "totals": {
+        "failed": 1,
+        "passed": 0,
+        "cantTell": 0
+      },
+      "materializedDiagnostics": [
+        {
+          "containerKind": "array-entry",
+          "constructor": "Object",
+          "keys": [
+            "failed",
+            "passed",
+            "cantTell"
+          ],
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        }
+      ]
+    },
+    "target": {
+      "selector": "[data-act-diff-target='primary']",
+      "exists": true,
+      "count": 1,
+      "tag": "th",
+      "id": "col2",
+      "explicitRole": null,
+      "text": "Starting with a Z",
+      "ariaHiddenAncestor": false,
+      "hiddenAncestorTag": null,
+      "computed": {
+        "display": "table-cell",
+        "visibility": "visible",
+        "opacity": "1"
+      },
+      "headers": {
+        "raw": "",
+        "tokens": [],
+        "resolved": []
+      },
+      "labelledby": {
+        "raw": "",
+        "tokens": [],
+        "resolved": []
+      },
+      "table": {
+        "exists": true,
+        "rowCount": 1,
+        "targetRowIndex": 0,
+        "sameRowDataCellCount": 0,
+        "headerCandidateCount": 2
+      },
+      "ax": {
+        "available": true,
+        "foundInDom": true,
+        "ignored": false,
+        "role": "columnheader",
+        "name": "Starting with a Z",
+        "ignoredReasons": []
+      }
+    },
+    "signature": "CANT_TELL|FAIL",
+    "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"CANT_TELL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+  },
+  "observations": [
+    {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "th-has-data-cells",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "table"
+          ]
+        ],
+        "bucket": "incomplete",
+        "outcome": "CANT_TELL",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 46,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r46",
+        "execution": "EXECUTED",
+        "outcome": "FAIL",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": "col2",
+        "explicitRole": null,
+        "text": "Starting with a Z",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 0,
+          "headerCandidateCount": 2
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "columnheader",
+          "name": "Starting with a Z",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "CANT_TELL|FAIL",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"CANT_TELL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "th-has-data-cells",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "table"
+          ]
+        ],
+        "bucket": "incomplete",
+        "outcome": "CANT_TELL",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 46,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r46",
+        "execution": "EXECUTED",
+        "outcome": "FAIL",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": "col2",
+        "explicitRole": null,
+        "text": "Starting with a Z",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 0,
+          "headerCandidateCount": 2
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "columnheader",
+          "name": "Starting with a Z",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "CANT_TELL|FAIL",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"CANT_TELL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    },
+    {
+      "axe": {
+        "engine": "axe",
+        "ruleId": "th-has-data-cells",
+        "execution": "EXECUTED",
+        "nodeCount": 1,
+        "targets": [
+          [
+            "table"
+          ]
+        ],
+        "bucket": "incomplete",
+        "outcome": "CANT_TELL",
+        "applicable": true
+      },
+      "alfa": {
+        "engine": "alfa",
+        "ruleNumber": 46,
+        "ruleUri": "https://alfa.siteimprove.com/rules/sia-r46",
+        "execution": "EXECUTED",
+        "outcome": "FAIL",
+        "applicable": true,
+        "selection": {
+          "visited": 88,
+          "selected": 1
+        },
+        "aggregateCount": 1,
+        "bucketAggregates": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "totals": {
+          "failed": 1,
+          "passed": 0,
+          "cantTell": 0
+        },
+        "materializedDiagnostics": [
+          {
+            "containerKind": "array-entry",
+            "constructor": "Object",
+            "keys": [
+              "failed",
+              "passed",
+              "cantTell"
+            ],
+            "failed": 1,
+            "passed": 0,
+            "cantTell": 0
+          }
+        ]
+      },
+      "target": {
+        "selector": "[data-act-diff-target='primary']",
+        "exists": true,
+        "count": 1,
+        "tag": "th",
+        "id": "col2",
+        "explicitRole": null,
+        "text": "Starting with a Z",
+        "ariaHiddenAncestor": false,
+        "hiddenAncestorTag": null,
+        "computed": {
+          "display": "table-cell",
+          "visibility": "visible",
+          "opacity": "1"
+        },
+        "headers": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "labelledby": {
+          "raw": "",
+          "tokens": [],
+          "resolved": []
+        },
+        "table": {
+          "exists": true,
+          "rowCount": 1,
+          "targetRowIndex": 0,
+          "sameRowDataCellCount": 0,
+          "headerCandidateCount": 2
+        },
+        "ax": {
+          "available": true,
+          "foundInDom": true,
+          "ignored": false,
+          "role": "columnheader",
+          "name": "Starting with a Z",
+          "ignoredReasons": []
+        }
+      },
+      "signature": "CANT_TELL|FAIL",
+      "engineObservationKey": "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"CANT_TELL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+    }
+  ],
+  "signatures": [
+    "CANT_TELL|FAIL",
+    "CANT_TELL|FAIL",
+    "CANT_TELL|FAIL"
+  ],
+  "engineObservationKeys": [
+    "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"CANT_TELL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+    "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"CANT_TELL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}",
+    "{\"axe\":{\"execution\":\"EXECUTED\",\"outcome\":\"CANT_TELL\",\"applicable\":true},\"alfa\":{\"execution\":\"EXECUTED\",\"outcome\":\"FAIL\",\"applicable\":true},\"targetIdentity\":{\"selector\":\"[data-act-diff-target='primary']\",\"exists\":true,\"count\":1}}"
+  ]
+}
